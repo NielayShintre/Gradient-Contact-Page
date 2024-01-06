@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Challenge</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <img src="./bg-image.svg" />
+
+      <div class="logo">
+        <img src="./contact-form-icon.svg">
+      </div>
+
+      <div class="content">
+        <h1>Interested in our business pricing?</h1>
+        <h4>
+          Fill out the form to view details and we'll contact you as soon as
+          possible.
+        </h4>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+
+          <input type="text" id="name" name="name" placeholder="Ethan Johnson"/>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Company Email:</label>
+          <input type="email" id="email" name="email" placeholder="ethan@johnson.com"/>
+        </div>
+
+        <div class="form-group">
+          <label for="companysize">Company Size:</label>
+          <select id="companysize" name="companysize">
+            <option value="">Select company size</option>
+            <option value="1-50">1-50 employees</option>
+
+            <option value="51-200">51-200 employees</option>
+
+            <option value="201-500">201-500 employees</option>
+
+            <option value="500+">500+ employees</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Landing Page Topic:</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option value="lead-generation">Lead Generation</option>
+            <option value="product-promotion">Product Promotion</option>
+            <option value="brand-awareness">Brand Awareness</option>
+            <option value="e-commerce">E-commerce Sales</option>
+            <option value="custom">Custom (Specify below)</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <label for="message">Message:</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder="Enter your message here..."
+          >
+          </textarea>
+        </div>
+
+        <div class="form-group">
+          <button>Contact Sales</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

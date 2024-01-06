@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro";
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main img { 
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.main .content {
+  position: absolute;
+  width: 550px;
+  top: 100px;
+  left: 420px;
+  color: white;
+  font-size: x-large;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.main form {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  width: 300px;
+  flex: 1;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.form-group select {
+  font-weight: 600;
+  font-size: medium;
+  width: 300px;
+  flex: 1;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.form-group select option {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.message textarea {
+  width: 630px;
+  flex: 1;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.form-group button {
+  width: 630px;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #4137a9;
+  font-size: medium;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .main form {
+        top: 600px;
+        width: 850px;
+        height: 580px;
+        margin: 0 auto;
+    }
+
+    .main .content {
+        position: absolute;
+        width: 450px;
+        text-align: center;
+        left: 290px;
+        top: 100px;
+        font-size:medium;
+        padding: 10px;
+    }
+    
+}
